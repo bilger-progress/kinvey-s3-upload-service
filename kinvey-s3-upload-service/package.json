@@ -23,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/bilger-progress/kinvey-s3-upload-service/issues"
   },
-  "homepage": "https://github.com/bilger-progress/kinvey-s3-upload-service#readme"
+  "homepage": "https://github.com/bilger-progress/kinvey-s3-upload-service#readme",
+  "dependencies": {
+    "kinvey-flex-sdk": "3.2.1",
+    "aws-sdk": "2.402.0",
+    "request": "2.88.0",
+    "request-promise": "4.2.2"
+  }
 }
