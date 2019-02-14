@@ -1,0 +1,27 @@
+{
+  "name": "kinvey-s3-upload-service",
+  "version": "1.0.0",
+  "description": "Upload files from Kinvey to AWS S3.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilger-progress/kinvey-s3-upload-service.git"
+  },
+  "keywords": [
+    "Flex",
+    "Kinvey",
+    "Files",
+    "S3",
+    "AWS",
+    "Service"
+  ],
+  "author": "Bilger Yahov @ Kinvey by Progress",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bilger-progress/kinvey-s3-upload-service/issues"
+  },
+  "homepage": "https://github.com/bilger-progress/kinvey-s3-upload-service#readme"
+}
