@@ -17,6 +17,13 @@ const FILE_ID = "xxx";
 // TODO: Add the S3 bucket name. 
 const AWS_BUCKET_NAME = "xxx"
 
+// S3 configs.
+awsSDK.config.update({
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+});
+const s3 = new awsSDK.S3();
+
 // Initialize Kinvey Flex.
 kinveyFlexSDK.service((err, flex) => {
     if (err) {
@@ -39,11 +46,6 @@ kinveyFlexSDK.service((err, flex) => {
                 encoding: null
             });
         }).then((fileData) => {
-            awsSDK.config.update({
-                accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-                secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
-            });
-            const s3 = new awsSDK.S3();
             return promisify((callback) => {
                 return s3.upload({
                     Bucket: AWS_BUCKET_NAME,
